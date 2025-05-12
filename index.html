@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Sign-Up</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Sign-Up</h2>
+    <form id="signup-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required placeholder="Enter your Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Enter your Email ID">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required placeholder="Enter your Password">
+
+      <button type="submit">Submit</button>
+      <button type="button" onclick="window.location.href='records.html'">View Records</button>
+    </form>
+  </div>
+
+  <!-- Preview Modal -->
+  <div class="modal" id="preview-modal">
+    <div class="modal-content">
+      <h3>Sign-Up Preview</h3>
+      <ul id="preview-data"></ul>
+      <button onclick="document.getElementById('preview-modal').style.display='none'">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
